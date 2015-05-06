@@ -15,20 +15,50 @@
           </block>
         </value>
         <next>
-          <block type="led_select" id="59" inline="true">
+          <block type="led_select" id="106" inline="true">
             <field name="ACTION">FLASH</field>
             <value name="LED">
-              <block type="math_number" id="66">
-                <field name="NUM">3</field>
+              <block type="math_number" id="113">
+                <field name="NUM">2</field>
               </block>
             </value>
             <next>
-              <block type="robot_delay" id="68" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="81">
-                    <field name="NUM">200</field>
+              <block type="led_select" id="136" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="math_number" id="143">
+                    <field name="NUM">3</field>
                   </block>
                 </value>
+                <next>
+                  <block type="led_select" id="152" inline="true">
+                    <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="math_number" id="159">
+                        <field name="NUM">4</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="led_select" id="59" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="math_number" id="66">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="robot_delay" id="68" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="81">
+                                <field name="NUM">200</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
